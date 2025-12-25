@@ -130,7 +130,8 @@ header h1 {
     margin-top: 40px;
 }
 
-.cta-primary, .cta-secondary {
+.cta-primary,
+.cta-secondary {
     padding: 15px 30px;
     text-decoration: none;
     border-radius: 8px;
@@ -281,7 +282,7 @@ h2 {
 }
 
 .skill-category:hover {
-    transform: translateY(-5px);
+    transform: translateY(-8px) scale(1.02);
     box-shadow: 0 15px 35px rgba(0, 212, 255, 0.2);
     border-color: rgba(0, 212, 255, 0.3);
 }
@@ -362,8 +363,13 @@ h2 {
 }
 
 @keyframes shimmer {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+    0% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(100%);
+    }
 }
 
 .tech-badges {
@@ -789,36 +795,36 @@ footer {
         flex-direction: column;
         gap: 20px;
     }
-    
+
     .nav-links {
         gap: 25px;
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+
     header {
         margin-top: 140px;
         padding: 120px 0 80px;
     }
-    
+
     header h1 {
         font-size: 2.5rem;
     }
-    
+
     .cta-buttons {
         flex-direction: column;
         align-items: center;
     }
-    
+
     h2 {
         font-size: 2.2rem;
     }
-    
+
     .stats {
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 30px;
     }
-    
+
     .skills-grid {
         grid-template-columns: 1fr;
     }
@@ -832,7 +838,7 @@ footer {
     .skill-bar {
         width: 100%;
     }
-    
+
     .projects-grid {
         grid-template-columns: 1fr;
     }
@@ -872,7 +878,7 @@ footer {
         text-align: center;
         gap: 30px;
     }
-    
+
     section {
         padding: 60px 0;
     }
